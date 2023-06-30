@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <main>
+    <!-- bài tập 1 : tính tổng số dương  -->
+    <div class="container">
+      <h1>tổng số dương </h1>
+      <div>
+        <label for="arrayInput">nhập số dương</label>
+        <input type="text" id="arrayInput" placeholder="vd: 1,2,3,4">
+      </div>
+      <button onclick="calculateSum()">Tính tổng</button>
+      <div id="result"></div>
+    </div>
+
+    <!-- // bài tập 2 : đếm số dương  -->
+
+    <div class="container">
+      <h1>Đếm số dương trong mảng</h1>
+      <div>
+        <label for="inputArray">Nhập mảng các số:</label>
+        <input type="text" id="inputArray" placeholder="Ví dụ: 1, 2, 3, 4" />
+        <button onclick="countNumbers()">Đếm</button>
+      </div>
+      <div id="result1"></div>
+    </div>
+
+    <!-- bài tập 3 : tìm số nhỏ nhất  -->
+    <div class="container">
+      <h1>Tìm số nhỏ nhất </h1>
+      <div>
+        <label for="inputArray1">Nhập mảng các số:</label>
+        <input type="text" id="inputArray1" placeholder="Ví dụ: 1, 2, 3, 4" />
+        <button onclick="minNumbers()">Tìm số nhỏ nhất</button>
+      </div>
+      <div id="result2"></div>
+    </div>
+    <!-- bài tập 4 : tìm số dương nhỏ nhất trong mảng -->
+    <div class="container">
+      <h1>tìm số dương nhỏ nhất </h1>
+      <div>
+        <label for="inputArray2">Nhập mảng các số:</label>
+        <input type="text" id="inputArray2" placeholder="vd:1,2,3,4">
+        <button onclick="minNumber()">tìm số dương nhỏ nhất</button>
+      </div>
+      <div id="result3"></div>
+    </div>
+    <!--  bài tập 5 : Tìm số chẵn cuối cùng trong mảng.
+       Nếu mảng không có giá trị chẵn thì trả về -1. -->
+    <div class="container">
+      <h1>Tìm số chẵn cuối cùng trong mảng.</h1>
+      <div>
+        <label for="inputArray3">Nhập mảng các số:</label>
+        <input type="text" id="inputArray3" placeholder="Ví dụ: 1, 2, 3, 4" />
+        <button onclick="even()">Tìm số chẳn</button>
+      </div>
+      <div id="result4"></div>
+    </div>
+    <!-- bài tập 6 : đổi chỗ 2 vị trí  -->
+   <div class="container">
+    <h1>Đổi chỗ 2 giá trị trong mảng</h1>
+
+    <label for="inputArray4">Nhập mảng s ố:</label>
+    <input type="text" id="inputArray4" placeholder="Ví dụ: 2, 4, 6, 8, 10" />
+
+    <label for="num1">Vị trí 1:</label>
+    <input type="number" id="num1" />
+
+    <label for="num2">Vị trí 2:</label>
+    <input type="number" id="num2" />
+
+    <button onclick="changePosition()">Đổi chỗ</button>
+   </div>
+    
+    <!-- bài tập 7 : sắp xếp tăng dần  -->
+    <div class="container">
+      <h1>Sắp xếp mảng</h1>
+
+      <label for="inputArray4">Nhập mảng:</label>
+      <input type="text" id="inputArray4" placeholder="Ví dụ: 1, 2, 3, 4" />
+
+      <button onclick="sortArray()">Sắp xếp</button>
+
+      <br />
+      <label for="result5">Kết quả sắp xếp:</label>
+      <span id="result5"></span>
+    </div>
+
+
+    <!-- bài tập 8 : Tìm số nguyên tố đầu tiên trong mảng -->
+    <div class="container">
+      <h2>Tìm số nguyên tố đầu tiên trong mảng</h2>
+      <label for="inputArray5">Nhập các số:</label>
+      <input type="text" id="inputArray5" placeholder="Ví dụ: 1, 2, 3, 4" />
+      <button onclick="findNumber()">Tìm số nguyên tố</button>
+      <div id="result6"></div>
+    </div>
+
+    <!--bài tập 9 : tìm xem trong mảng có bao nhiêu số nguyên? -->
+    <div class="container">
+      <h1>Tìm số nguyên trong mảng số thực</h1>
+
+      <label for="inputArray6">Nhập mảng số thực:</label>
+      <input type="text" id="inputArray6" placeholder="Ví dụ: 2.5, 3.7, 5.0, 7.2" />
+
+      <button onclick="findIntegers()">Tìm số nguyên</button>
+
+      <p id="result7"></p>
+
+    </div>
+
+    <!-- bài tập 10 : So sánh số lượng số dương và số lượng số âm xem số nào nhiều hơn. -->
+    <div class="container">
+      <h1>So sánh số lượng số dương và số lượng số âm</h1>
+
+    <label for="inputArray7">Nhập mảng số:</label>
+    <input type="text" id="inputArray7" placeholder="Ví dụ: -2, 3, -5, 7" />
+
+    <button onclick="comparePositiveNegative()">So sánh</button>
+
+    <p id="result8"></p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
